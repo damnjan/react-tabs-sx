@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "react": "^16.8.0",
+    "rebass": "^4.0.6"
+  },
+  "name": "react-tabs-sx",
+  "version": "0.0.1",
+  "description": "Simple React tabs that support sx prop from rebass/theme-ui",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/rebass": "^4.0.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damnjan Lukovic",
+  "repository": "https://github.com/damnjan/react-tabs-sx.git",
+  "license": "ISC"
+}
