@@ -72,6 +72,8 @@ export interface TabsProps {
   sxTitle?: SxStyleProp
   /** Override styles for selected tab title component */
   sxSelectedTitle?: SxStyleProp
+  /** Override styles for tab titles container */
+  sx?: SxStyleProp
 }
 
 export const Tabs: React.FunctionComponent<TabsProps> = ({
@@ -80,6 +82,7 @@ export const Tabs: React.FunctionComponent<TabsProps> = ({
   persist,
   sxTitle,
   sxSelectedTitle,
+  sx,
   children,
 }) => {
   const containerRef = React.useRef(null)
@@ -107,7 +110,8 @@ export const Tabs: React.FunctionComponent<TabsProps> = ({
         sx={{
           width: '100%',
           overflowX: 'auto',
-        }}
+          ...sx
+        } as SxStyleProp}
       >
         {titles.map((tab, index) => (
           <TabTitle
