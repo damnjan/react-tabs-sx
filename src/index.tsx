@@ -49,7 +49,7 @@ const TabTitle = ({
   </Box>
 )
 
-interface TabProps {
+export interface TabProps {
   title: string
   children: React.ReactNode
 }
@@ -59,7 +59,7 @@ export const Tab: React.FunctionComponent<TabProps> = ({ children }) => (
   <>{children}</>
 )
 
-interface TabsProps {
+export interface TabsProps {
   /** Index of currently selected tab */
   selectedTab: number
   onSelect: (tabIndex: number) => void
