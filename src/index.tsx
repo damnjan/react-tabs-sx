@@ -58,6 +58,7 @@ export interface TabProps {
 export const Tab: React.FunctionComponent<TabProps> = ({ children }) => (
   <>{children}</>
 )
+Tab.displayName = 'Tab'
 
 export interface TabsProps {
   /** Index of currently selected tab */
@@ -125,3 +126,4 @@ export const Tabs: React.FunctionComponent<TabsProps> = ({
     </Box>
   )
 }
+Tabs.displayName = 'Tabs'
